@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LifeSim – Full Build</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Animation library (SRI removed to avoid hash mismatch blocking the script in some browsers) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- anime.js for PC Casino neon animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- Flotr2 graphing library for BTC price charts -->
+  <script src="js/vendor/flotr2.min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/money.js"></script>
+  <script src="js/meals.js"></script>
+  <script src="js/bank.js"></script>
+  <script src="js/inventory.js"></script>
+  <script src="js/economy.js"></script>
+  <script src="js/education.js"></script>
+  <script src="js/jobs.js"></script>
+  <script src="js/health.js"></script>
+  <script src="js/property.js"></script>
+  <script src="js/retail_catalog.js"></script>
+  <script src="js/companies.js"></script>
+  <script src="js/btc.js"></script>
+  <script src="js/pc.js"></script>
+  <!-- PC app + file registries (modular) -->
+  <script src="js/desktop/apps/pc_apps_registry.js"></script>
+  <script src="js/desktop/apps/apps/desktop.js"></script>
+  <script src="js/desktop/apps/apps/wallet.js"></script>
+  <script src="js/desktop/apps/apps/inventory.js"></script>
+  <script src="js/desktop/apps/apps/mining.js"></script>
+  <script src="js/desktop/apps/apps/cloud.js"></script>
+  <script src="js/desktop/apps/apps/market.js"></script>
+  <script src="js/desktop/apps/apps/internet.js"></script>
+  <script src="js/desktop/apps/apps/pcminer.js"></script>
+  <script src="js/desktop/apps/apps/antivirus.js"></script>
+  <script src="js/desktop/apps/apps/tools.js"></script>
+  <script src="js/desktop/apps/apps/cleaner.js"></script>
+  <script src="js/desktop/apps/apps/casino.js"></script>
+  <script src="js/desktop/apps/apps/propertynews.js"></script>
+  <script src="js/desktop/apps/apps/email.js"></script>
+  <script src="js/desktop/apps/apps/monitor.js"></script>
+  <script src="js/desktop/apps/apps/textedit.js"></script>
+  <script src="js/desktop/apps/apps/av_sentinel.js"></script>
+  <script src="js/desktop/apps/apps/av_byteguard.js"></script>
+  <script src="js/desktop/apps/apps/av_northshield.js"></script>
+  <script src="js/desktop/files/pc_files.js"></script>
+  <script src="js/casino.js"></script>
+  <script src="js/world.js"></script>
+  <script src="js/data/miners_data.js"></script>
+  <script src="js/prestige.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/ui/ui_quest_defs.js"></script>
+  <script src="js/ui/ui_media_and_desktop_notifs.js"></script>
+  <script src="js/ui/ui_templates_shell.js"></script>
+  <script src="js/ui/ui_intros_and_tab_state.js"></script>
+  <script src="js/ui/ui_modals_core.js"></script>
+  <script src="js/ui/ui_helpers_formatting.js"></script>
+  <script src="js/ui/ui_companies_tab.js"></script>
+  <script src="js/ui/ui_settings_tab.js"></script>
+  <script src="js/ui/ui_bank_tab.js"></script>
+  <script src="js/ui/ui_btc_tab.js"></script>
+  <script src="js/ui/ui_shop_tab.js"></script>
+  <script src="js/desktop/websites/pc_websites.js"></script>
+  <!-- PC websites (modular) -->
+  <script src="js/desktop/websites/sites/01_sentinelav_security.js"></script>
+  <script src="js/desktop/websites/sites/02_byteguard_security.js"></script>
+  <script src="js/desktop/websites/sites/03_northshield_security.js"></script>
+  <script src="js/desktop/websites/sites/04_cleansweep_tools.js"></script>
+  <script src="js/desktop/websites/sites/05_toolboxx_utilities.js"></script>
+  <script src="js/desktop/websites/sites/06_fixit_help.js"></script>
+  <script src="js/desktop/websites/sites/07_homesnap_properties.js"></script>
+  <script src="js/desktop/websites/sites/08_rentpulse_properties.js"></script>
+  <script src="js/desktop/websites/sites/09_cryptocave_social.js"></script>
+  <script src="js/desktop/websites/sites/10_chatterbox_social.js"></script>
+  <script src="js/desktop/websites/sites/11_minercafe_community.js"></script>
+  <script src="js/desktop/websites/sites/12_hashrate_tools.js"></script>
+  <script src="js/desktop/websites/sites/13_poolwave_mining.js"></script>
+  <script src="js/desktop/websites/sites/14_ledgerlane_finance.js"></script>
+  <script src="js/desktop/websites/sites/15_quickloan_finance.js"></script>
+  <script src="js/desktop/websites/sites/16_blockbrief_news.js"></script>
+  <script src="js/desktop/websites/sites/17_marketwatcher_finance.js"></script>
+  <script src="js/desktop/websites/sites/18_safecloud_backup.js"></script>
+  <script src="js/desktop/websites/sites/19_devdocs_tools.js"></script>
+  <script src="js/desktop/websites/sites/20_adshield_extensions.js"></script>
+  <script src="js/ui/ui_pc.js"></script>
+  <script src="js/desktop/pc_events.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/ui/ui_topbar_position.js"></script>
+  <script src="js/ui_debug.js"></script>
+  <script src="js/tabs/ui_tabs_overview.js"></script>
+  <script src="js/tabs/ui_tabs_quests.js"></script>
+  <script src="js/tabs/ui_tabs_eventlog.js"></script>
+  <script src="js/tabs/ui_tabs_school.js"></script>
+  <script src="js/tabs/ui_tabs_jobs.js"></script>
+  <script src="js/tabs/ui_tabs_property_modals.js"></script>
+  <script src="js/tabs/ui_tabs_property.js"></script>
+  <script src="js/tabs/ui_tabs_healthcare.js"></script>
+  <script src="js/tabs/ui_tabs_travel.js"></script>
+  <script src="js/tabs/ui_tabs_prestige.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
